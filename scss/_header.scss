@@ -1,0 +1,26 @@
+header {
+    background-color: $color-header-bg;
+    text-align: center;
+    box-shadow: 20px 30px 70px black;
+  
+    h1 {
+      font-size: 80px;
+      font-family: $font-family;
+    }
+  
+    ul {
+      list-style-type: none;
+  
+      li {
+        display: inline-block;
+        margin-right: 20px;
+        font-family: $font-family;
+        font-weight: 600;
+        font-size: 25px;
+  
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }

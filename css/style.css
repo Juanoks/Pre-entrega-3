@@ -1,29 +1,23 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 header {
   background-color: #9BBEDC;
   text-align: center;
   box-shadow: 20px 30px 70px black;
 }
-
 header h1 {
   font-size: 80px;
   font-family: "Madimi One", sans-serif;
 }
-
-nav ul li {
+header ul {
+  list-style-type: none;
+}
+header ul li {
   display: inline-block;
-  font-family: "Madimi One", sans-serif;
   margin-right: 20px;
+  font-family: "Madimi One", sans-serif;
   font-weight: 600;
   font-size: 25px;
 }
-
-nav ul li a {
+header ul li a {
   text-decoration: none;
 }
 
@@ -37,8 +31,7 @@ body {
   background-color: #e6e6dd;
   text-align: center;
 }
-
-h2 {
+body h2 {
   margin-top: 30px;
 }
 
@@ -47,48 +40,34 @@ h2 {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-
 .productos div {
   display: flex;
   flex-direction: column;
 }
-
 .productos div img {
   width: 100%;
   max-width: 100%;
 }
-
 .productos div h2 {
   text-align: center;
 }
 
 .ofertas {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
-
 .ofertas div {
   flex-basis: calc(33.33% - 10px);
 }
-
-.ofertas img {
+.ofertas div img {
   width: 100%;
   max-width: 100%;
 }
-
-.ofertas h2 {
+.ofertas div h2 {
   text-align: center;
-}
-
-.zapatos {
-  height: 40vh;
-}
-
-.mb-3 {
-  padding: 0 relative;
 }
 
 footer {
@@ -128,9 +107,7 @@ footer {
   .ofertas div {
     flex-grow: 1;
   }
-  /* npm init */
-  /* sass --watch .\scss\style.scss .\css\style.css */
-
 }
+
 
 /*# sourceMappingURL=style.css.map */

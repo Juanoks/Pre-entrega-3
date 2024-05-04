@@ -1,0 +1,17 @@
+.ofertas {
+    @include flex-center;
+    flex-wrap: wrap;
+    gap: 20px;
+  
+    div {
+      flex-basis: calc(33.33% - 10px);
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
+  
+      h2 {
+        text-align: center;
+      }
+    }
+  }

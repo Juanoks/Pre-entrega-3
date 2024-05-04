@@ -1,0 +1,32 @@
+@media screen and (min-width: 700px) and (max-width: 1020px){
+    header {
+      margin-bottom: 10px;   
+    }
+  
+    header h1 {
+      font-size: 60px;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    header {
+      margin: 5px 10px;
+      margin-bottom: 10px;
+      box-shadow: none;
+    }
+    header h1 {
+      font-size: 40px;
+    }
+    nav ul li {
+      font-size: 20px;
+    }
+    .productos {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .productos div {
+      margin-bottom: 20px;
+    }
+    .ofertas div {
+      flex-grow: 1;
+    }
+}
