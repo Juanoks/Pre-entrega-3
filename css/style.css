@@ -34,6 +34,9 @@ body {
 body h2 {
   margin-top: 30px;
 }
+body .accordion-item {
+  background-color: #e6e6dd;
+}
 
 .productos {
   display: grid;
