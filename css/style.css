@@ -1,80 +1,121 @@
 header {
-  background-color: #9BBEDC;
-  text-align: center;
+  background-image: linear-gradient(#9BBEDC, white);
   box-shadow: 20px 30px 70px black;
+  padding: 15px 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
 }
-header h1 {
-  font-size: 80px;
-  font-family: "Madimi One", sans-serif;
+header a {
+  text-decoration: none;
 }
-header ul {
+header a img {
+  max-height: 80px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+header a img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+header nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+header nav ul {
   list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 10;
 }
-header ul li {
+header nav ul li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 50px;
   font-family: "Madimi One", sans-serif;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 30px;
 }
-header ul li a {
+header nav ul li a {
   text-decoration: none;
 }
 
 .carousel-item img {
-  max-height: 400px;
   width: 100%;
+  height: auto;
+  max-height: 300px;
   object-fit: cover;
 }
 
 body {
   background-color: #e6e6dd;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Madimi One", sans-serif;
 }
-body h2 {
-  margin-top: 30px;
+body main h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  position: relative;
 }
-body .accordion-item {
-  background-color: #e6e6dd;
+body main h1::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #ff6600;
+  margin: 10px auto 0;
+}
+body main p {
+  font-size: 1.8em;
+  color: #666;
+  line-height: 1.6;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+body iframe {
+  max-width: 100%;
+}
+
+.productos-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
 }
 
 .productos {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
-}
-.productos div {
-  display: flex;
-  flex-direction: column;
-}
-.productos div img {
-  width: 100%;
-  max-width: 100%;
-}
-.productos div h2 {
+  background-color: #9BBEDC;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
 }
-
-.ofertas {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.ofertas div {
-  flex-basis: calc(33.33% - 10px);
-}
-.ofertas div img {
-  width: 100%;
+.productos img {
+  background-color: white;
   max-width: 100%;
+  height: auto;
+  border-radius: 4px;
 }
-.ofertas div h2 {
-  text-align: center;
+.productos h2 {
+  font-size: 30px;
+  color: #333;
+  margin-top: 8px;
+}
+.productos:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   text-align: center;
@@ -83,34 +124,90 @@ footer {
 
 @media screen and (min-width: 700px) and (max-width: 1020px) {
   header {
-    margin-bottom: 10px;
+    padding: 15px 20px;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
   }
-  header h1 {
-    font-size: 60px;
+  header nav {
+    justify-content: flex-end;
+  }
+  header nav ul {
+    flex-direction: row;
+    align-items: center;
+  }
+  header nav ul li {
+    margin-right: 15px;
+    font-size: 28px;
   }
 }
 @media screen and (max-width: 700px) {
   header {
-    margin: 5px 10px;
-    margin-bottom: 10px;
     box-shadow: none;
+    flex-direction: row;
+    padding: 10px;
+    height: 175px;
   }
-  header h1 {
-    font-size: 40px;
+  header nav ul {
+    flex-direction: column;
+    padding-top: 10px;
   }
-  nav ul li {
-    font-size: 20px;
+  header nav ul li {
+    margin: 0;
+    text-align: center;
+    font-size: 33px;
+    height: 55px;
   }
-  .productos {
+  header nav ul li a img {
+    max-height: 80px;
+  }
+  .banner-background {
+    height: 300px;
+  }
+  .banner h2 {
+    font-size: 2em;
+  }
+  .productos-container {
     grid-template-columns: repeat(2, 1fr);
   }
-  .productos div {
-    margin-bottom: 20px;
-  }
-  .ofertas div {
-    flex-grow: 1;
-  }
 }
+.banner {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+.banner:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.banner-background {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-color: #006694;
+  padding: 20px;
+}
+.banner-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.banner-background h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 4em;
+}
+
 
 
 /*# sourceMappingURL=style.css.map */

@@ -1,12 +1,40 @@
 body {
-    background-color: $color-body-bg;
-    text-align: center;
-  
-    h2 {
-      margin-top: 30px;
-    }
+  background-color: #e6e6dd;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+
+  main {
     
-    .accordion-item{
-      background-color: $color-body-bg
+    h1 {
+      font-size: 2.5em;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 4px;
+        background-color: #ff6600;
+        margin: 10px auto 0;
+      }
+    }
+
+    p {
+      font-size: 1.8em;
+      color: #666;
+      line-height: 1.6;
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 0 20px;
     }
   }
+
+  iframe {
+    max-width: 100%;
+  }
+}

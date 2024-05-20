@@ -17,107 +17,110 @@
     
     <title>Inicio</title>
   </head>
-<body>
+  <body>
 
     <header>
+      <a href="index.html">
+        <img src="img/logo.png" alt="Logo">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="pages/pantuflas.html">Pantuflas</a></li>
+              <li><a class="dropdown-item" href="pages/alpargatas.html">Alpargatas</a></li>
+              <li><a class="dropdown-item" href="pages/ojotas.html">Ojotas</a></li>
+            </ul>
+          <li class="nav-item"><a href="pages/contacto.html">Contacto</a></li>
+          </li>
+        </ul>
+   
+      </nav>
+    </header>
+    
       
-        <img src="" alt=""> <!-- acá estaría el logo -->
-        <h1>Calzados Miren</h1>       
-
-        <nav>                                                   
-            <ul>
-               <li>
-                <a href="index.html">Inicio</a>
-              </li>
-
-               <li class="nav-item">
-                 <a href="pages/productos.html">Productos</a>
-               </li>
-
-               <li class="nav-item">
-                <a href="pages/ofertas.html">Ofertas</a>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Más
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="pages/contacto.html">Contacto</a></li>
-                    <li><a class="dropdown-item" href="pages/sobre-nosotros.html">Sobre nosotros</a></li>
-                </ul>
-              </li>              
-            </ul>  
-
-        </nav>      
-
-    </header>  
 
     <main>
-
-        <section>
-
-          <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/carrusel1.jpeg" class="d-block w-100" alt="pantuflas en una cinta">
+      <section>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
               </div>
-
-              <div class="carousel-item">
-                <img src="img/carrusel2.jpg" class="d-block w-100" alt="fábrica desde afuera">
+  
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="img/carrusel1.jpeg" class="d-block w-100" alt="pantuflas en una cinta">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="img/carrusel2.jpg" class="d-block w-100" alt="fábrica desde afuera">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="img/carrusel3.jpg" class="d-block w-100" alt="un montón de pantuflas">
+                  </div>
               </div>
-
-              <div class="carousel-item">
-                <img src="img/carrusel3.jpg" class="d-block w-100" alt="un montón de pantuflas">
-              </div>             
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+  
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+              </button>
           </div>
-         
-          
-       <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut ipsum vero sed quisquam quo illum at voluptas exercitationem. Dolor <strong>praesentium molestiae qui.</strong> Ducimus impedit doloremque distinctio provident dolorem unde nostrum!</h2>
+
+          <br>
+  
+          <h1>Sobre Nosotros</h1>
+          <p>En Calzados Miren, nos dedicamos a la fabricación de calzado de alta calidad, especializados en pantuflas, ojotas y alpargatas. Con años de experiencia en la industria del calzado, nos enorgullece ofrecer productos que combinan confort, durabilidad y estilo.</p>
+  
+          <br>
+
+          <div class="banner">
+            <a href="pages/pantuflas.html">
+                <div class="banner-background">
+                    <img src="img/pantuflas-banner.png" alt="Nuestras pantuflas" style="background-color: #FFFFFF;">
+                    <h2>Nuestras Pantuflas</h2>
+                </div>
+            </a>
+          </div>
 
           <br>
 
-            <div class="accordion" id="accordionExample">
-              
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Menu acordión prueba 
-                  </button>
-                </h2>
-
-                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <h3><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsam aliquam, assumenda beatae mollitia itaque ducimus soluta praesentium non earum nesciunt molestiae explicabo eligendi necessitatibus ut iure accusamus at sit?</strong></h3>                    
-                  </div>
+          <div class="banner">
+            <a href="pages/alpargatas.html">
+                <div class="banner-background">
+                    <img src="img/alpargatas-banner.png" alt="Nuestras Alpargatas" style="background-color: #FFFFFF;">
+                    <h2>Nuestras Alpargatas</h2>
                 </div>
+            </a>
+          </div>
 
-              </div>
+          <br>
 
-        </section>
-
-    </main>
+          <div class="banner">
+            <a href="pages/ojotas.html">
+                <div class="banner-background">
+                    <img src="img/ojotas-banner.png" alt="Nuestras Alpargatas" style="background-color: #FFFFFF;">
+                    <h2>Nuestras Ojotas</h2>
+                </div>
+            </a>
+          </div>
+      
+          <br>
+         
+      </section>
+  </main>
+  
 
     <footer>
 
-      <h3>Todos los derechos reservados</h3>
+      <h3>©Todos los derechos reservados</h3>
 
     </footer>
 

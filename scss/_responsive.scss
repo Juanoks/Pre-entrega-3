@@ -1,32 +1,63 @@
-@media screen and (min-width: 700px) and (max-width: 1020px){
-    header {
-      margin-bottom: 10px;   
-    }
-  
-    header h1 {
-      font-size: 60px;
-    }
-  }
-  
-  @media screen and (max-width: 700px) {
-    header {
-      margin: 5px 10px;
-      margin-bottom: 10px;
-      box-shadow: none;
-    }
-    header h1 {
-      font-size: 40px;
-    }
-    nav ul li {
-      font-size: 20px;
-    }
-    .productos {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .productos div {
-      margin-bottom: 20px;
-    }
-    .ofertas div {
-      flex-grow: 1;
-    }
+@media screen and (min-width: 700px) and (max-width: 1020px) {
+
+  header {
+    padding: 15px 20px;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+
+      nav {
+      justify-content: flex-end;
+
+        ul {
+          flex-direction: row;
+          align-items: center;
+
+          li {
+            margin-right: 15px;
+            font-size: 28px; 
+          }
+        }
+      }
+  } 
 }
+
+@media screen and (max-width: 700px) {
+
+  header {
+    box-shadow: none;
+    flex-direction: row;
+    padding: 10px;
+    height: 175px;
+
+    nav ul {
+      flex-direction: column; 
+      padding-top: 10px; 
+
+      li {
+        margin: 0; 
+        text-align: center; 
+        font-size: 33px; 
+        height: 55px;
+
+        a img {
+         max-height: 80px;
+        }
+      }
+    }
+    
+  }
+
+  .banner-background {
+    height: 300px;
+  }
+
+  .banner h2 {
+    font-size: 2em;
+  }
+
+  .productos-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+

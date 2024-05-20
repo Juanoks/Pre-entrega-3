@@ -1,18 +1,11 @@
+.productos-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
 .productos {
-    @include grid-gap;   
-    grid-template-columns: repeat(3, 1fr);   
+  @include product-styles;
   
-    div {
-      display: flex;
-      flex-direction: column;
-  
-      img {
-        width: 100%;
-        max-width: 100%;
-      }
-  
-      h2 {
-        text-align: center;
-      }
-    }
-  }
+}
