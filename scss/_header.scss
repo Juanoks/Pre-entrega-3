@@ -1,5 +1,5 @@
 header {
-  background-image: linear-gradient(#9BBEDC, white);
+  background-image: $degradado;
   box-shadow: 20px 30px 70px black;
   padding: 15px 70px;
   display: flex;
@@ -9,9 +9,11 @@ header {
 
   a {
     text-decoration: none;
+
     img {
       max-height: 80px;
       transition: transform 0.3s, box-shadow 0.3s;
+
       &:hover {
         transform: scale(1.1);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -29,7 +31,7 @@ header {
       display: flex;
       justify-content: flex-end;
       margin: 0;
-      padding: 10;
+      padding: 0;
 
       li {
         display: inline-block;
@@ -40,8 +42,28 @@ header {
 
         a {
           text-decoration: none;
+        }      
+      }
+
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: white;
+        padding: 10px 0;
+        list-style: none;
+        margin-top: 10px;
+
+        li {
+          margin: 0;
+          padding: 10px 20px;
+
+          a {
+            font-size: 30px; 
+            color: black;
+          }
+
         }
       }
     }
-  } 
+  }
 }
