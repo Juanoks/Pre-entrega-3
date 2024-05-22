@@ -161,7 +161,7 @@ footer {
   header {
     box-shadow: none;
     flex-direction: row;
-    padding: 10px;
+    padding: 0px;
     height: 175px;
   }
   header nav ul {
@@ -171,11 +171,11 @@ footer {
   header nav ul li {
     margin: 0;
     text-align: center;
-    font-size: 33px;
-    height: 55px;
+    font-size: 28px;
+    height: 50px;
   }
-  header nav ul li a img {
-    max-height: 80px;
+  header a img {
+    max-height: 70px;
   }
   .banner-background {
     height: 300px;
