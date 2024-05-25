@@ -37,4 +37,18 @@ body {
   iframe {
     max-width: 100%;
   }
+
+  .form-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;                
+  }
+  
+  .form {
+    background-color: grey;
+    border: 5px solid;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+  }
 }

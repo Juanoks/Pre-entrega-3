@@ -97,6 +97,18 @@ body main p {
 body iframe {
   max-width: 100%;
 }
+body .form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .form {
+  background-color: grey;
+  border: 5px solid;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+}
 
 .productos-container {
   display: grid;
